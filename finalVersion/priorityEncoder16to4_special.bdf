@@ -1,0 +1,150 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 1991-2015 Altera Corporation. All rights reserved.
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, the Altera Quartus Prime License Agreement,
+the Altera MegaCore Function License Agreement, or other 
+applicable license agreement, including, without limitation, 
+that your use is for the sole purpose of programming logic 
+devices manufactured by Altera and sold by Altera or its 
+authorized distributors.  Please refer to the applicable 
+agreement for further details.
+*/
+(header "graphic" (version "1.4"))
+(pin
+	(input)
+	(rect 144 416 440 432)
+	(text "INPUT" (rect 253 0 359 27)(font "Arial" (font_size 6)))
+	(text "in[7..0]" (rect 5 0 194 30)(font "Arial" ))
+	(pt 296 8)
+	(drawing
+		(line (pt 212 12)(pt 237 12))
+		(line (pt 212 4)(pt 237 4))
+		(line (pt 241 8)(pt 296 8))
+		(line (pt 212 12)(pt 212 4))
+		(line (pt 237 4)(pt 241 8))
+		(line (pt 237 12)(pt 241 8))
+	)
+	(text "VCC" (rect 256 7 319 34)(font "Arial" (font_size 6)))
+)
+(pin
+	(output)
+	(rect 2640 616 2884 632)
+	(text "OUTPUT" (rect 1 0 128 27)(font "Arial" (font_size 6)))
+	(text "allZero" (rect 90 0 238 27)(font "Arial" (font_size 6)))
+	(pt 0 8)
+	(drawing
+		(line (pt 0 8)(pt 52 8))
+		(line (pt 52 4)(pt 78 4))
+		(line (pt 52 12)(pt 78 12))
+		(line (pt 52 12)(pt 52 4))
+		(line (pt 78 4)(pt 82 8))
+		(line (pt 82 8)(pt 78 12))
+		(line (pt 78 12)(pt 82 8))
+	)
+)
+(pin
+	(output)
+	(rect 2672 424 2980 440)
+	(text "OUTPUT" (rect 1 0 128 27)(font "Arial" (font_size 6)))
+	(text "out[3..0]" (rect 90 0 302 30)(font "Arial" ))
+	(pt 0 8)
+	(drawing
+		(line (pt 0 8)(pt 52 8))
+		(line (pt 52 4)(pt 78 4))
+		(line (pt 52 12)(pt 78 12))
+		(line (pt 52 12)(pt 52 4))
+		(line (pt 78 4)(pt 82 8))
+		(line (pt 82 8)(pt 78 12))
+		(line (pt 78 12)(pt 82 8))
+	)
+)
+(symbol
+	(rect 920 688 1336 784)
+	(text "priorityEncoder8to3" (rect 5 0 408 27)(font "Arial" (font_size 6)))
+	(text "inst1" (rect 8 65 114 92)(font "Arial" (font_size 6)))
+	(port
+		(pt 0 32)
+		(input)
+		(text "in[7..0]" (rect 0 0 169 27)(font "Arial" (font_size 6)))
+		(text "in[7..0]" (rect 21 27 190 54)(font "Arial" (font_size 6)))
+		(line (pt 0 32)(pt 16 32)(line_width 3))
+	)
+	(port
+		(pt 416 32)
+		(output)
+		(text "out[2..0]" (rect 0 0 191 27)(font "Arial" (font_size 6)))
+		(text "out[2..0]" (rect 204 27 395 54)(font "Arial" (font_size 6)))
+		(line (pt 416 32)(pt 400 32)(line_width 3))
+	)
+	(port
+		(pt 416 48)
+		(output)
+		(text "allZero" (rect 0 0 148 27)(font "Arial" (font_size 6)))
+		(text "allZero" (rect 247 43 395 70)(font "Arial" (font_size 6)))
+		(line (pt 416 48)(pt 400 48))
+	)
+	(drawing
+		(rectangle (rect 16 16 400 80))
+	)
+)
+(symbol
+	(rect 2160 352 2192 384)
+	(text "GND" (rect 8 16 71 43)(font "Arial" (font_size 6)))
+	(text "inst4" (rect 3 21 109 48)(font "Arial" (font_size 6))(invisible))
+	(port
+		(pt 16 0)
+		(output)
+		(text "1" (rect 18 0 34 31)(font "Courier New" (bold))(invisible))
+		(text "1" (rect 18 0 34 31)(font "Courier New" (bold))(invisible))
+		(line (pt 16 8)(pt 16 0))
+	)
+	(drawing
+		(line (pt 8 8)(pt 16 16))
+		(line (pt 16 16)(pt 24 8))
+		(line (pt 8 8)(pt 24 8))
+	)
+)
+(connector
+	(pt 1336 736)
+	(pt 1392 736)
+)
+(connector
+	(pt 1392 736)
+	(pt 1392 616)
+)
+(connector
+	(text "in[7..0]" (rect 824 688 993 715)(font "Arial" (font_size 6)))
+	(pt 920 720)
+	(pt 816 720)
+	(bus)
+)
+(connector
+	(pt 2176 352)
+	(pt 2176 336)
+)
+(connector
+	(text "out[3]" (rect 2223 304 2350 331)(font "Arial" (font_size 6)))
+	(pt 2176 336)
+	(pt 2264 336)
+)
+(connector
+	(text "out[2..0]" (rect 1728 696 1919 723)(font "Arial" (font_size 6)))
+	(pt 1336 720)
+	(pt 1952 720)
+	(bus)
+)
+(connector
+	(text "allZero" (rect 1624 584 1772 611)(font "Arial" (font_size 6)))
+	(pt 1392 616)
+	(pt 1688 616)
+)

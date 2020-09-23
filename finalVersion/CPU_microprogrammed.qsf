@@ -1,0 +1,126 @@
+# -------------------------------------------------------------------------- #
+#
+# Copyright (C) 1991-2015 Altera Corporation. All rights reserved.
+# Your use of Altera Corporation's design tools, logic functions 
+# and other software and tools, and its AMPP partner logic 
+# functions, and any output files from any of the foregoing 
+# (including device programming or simulation files), and any 
+# associated documentation or information are expressly subject 
+# to the terms and conditions of the Altera Program License 
+# Subscription Agreement, the Altera Quartus Prime License Agreement,
+# the Altera MegaCore Function License Agreement, or other 
+# applicable license agreement, including, without limitation, 
+# that your use is for the sole purpose of programming logic 
+# devices manufactured by Altera and sold by Altera or its 
+# authorized distributors.  Please refer to the applicable 
+# agreement for further details.
+#
+# -------------------------------------------------------------------------- #
+#
+# Quartus Prime
+# Version 15.1.0 Build 185 10/21/2015 SJ Lite Edition
+# Date created = 09:41:05  May 08, 2018
+#
+# -------------------------------------------------------------------------- #
+#
+# Notes:
+#
+# 1) The default values for assignments are stored in the file:
+#		CPU_microprogrammed_assignment_defaults.qdf
+#    If this file doesn't exist, see file:
+#		assignment_defaults.qdf
+#
+# 2) Altera recommends that you do not modify this file. This
+#    file is updated automatically by the Quartus Prime software
+#    and any changes you make may be lost or overwritten.
+#
+# -------------------------------------------------------------------------- #
+
+
+set_global_assignment -name FAMILY "Cyclone V"
+set_global_assignment -name DEVICE 5CGTFD9E5F35C7
+set_global_assignment -name TOP_LEVEL_ENTITY FPU
+set_global_assignment -name ORIGINAL_QUARTUS_VERSION 15.1.0
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "09:41:05  MAY 08, 2018"
+set_global_assignment -name LAST_QUARTUS_VERSION 15.1.1
+set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
+set_global_assignment -name ERROR_CHECK_FREQUENCY_DIVISOR 256
+set_global_assignment -name EDA_SIMULATION_TOOL "ModelSim-Altera (VHDL)"
+set_global_assignment -name EDA_NETLIST_WRITER_OUTPUT_DIR simulation/modelsim -section_id eda_simulation
+set_global_assignment -name EDA_OUTPUT_DATA_FORMAT VHDL -section_id eda_simulation
+set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
+set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
+set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
+set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
+set_global_assignment -name BDF_FILE mantisa_standarder.bdf
+set_global_assignment -name BDF_FILE FPU.bdf
+set_global_assignment -name VERILOG_FILE rom.v
+set_global_assignment -name SOURCE_FILE SHRL.cmp
+set_global_assignment -name SOURCE_FILE SHRA.cmp
+set_global_assignment -name SOURCE_FILE SHL.cmp
+set_global_assignment -name SOURCE_FILE REG_COUNTER.cmp
+set_global_assignment -name SOURCE_FILE MUX2x1_32bit.cmp
+set_global_assignment -name SOURCE_FILE IR.cmp
+set_global_assignment -name SOURCE_FILE INIT_SP.cmp
+set_global_assignment -name SOURCE_FILE INIT_LV.cmp
+set_global_assignment -name SOURCE_FILE INIT_CPP.cmp
+set_global_assignment -name SOURCE_FILE CONST4.cmp
+set_global_assignment -name SOURCE_FILE CONST24.cmp
+set_global_assignment -name SOURCE_FILE BUS_CONTROLLER.cmp
+set_global_assignment -name SOURCE_FILE ALU_SHIFTER.cmp
+set_global_assignment -name QIP_FILE SHRL.qip
+set_global_assignment -name QIP_FILE SHRA.qip
+set_global_assignment -name QIP_FILE SHL.qip
+set_global_assignment -name QIP_FILE REG_COUNTER.qip
+set_global_assignment -name QIP_FILE MUX2x1_32bit.qip
+set_global_assignment -name QIP_FILE IR.qip
+set_global_assignment -name QIP_FILE INIT_SP.qip
+set_global_assignment -name QIP_FILE INIT_LV.qip
+set_global_assignment -name QIP_FILE INIT_CPP.qip
+set_global_assignment -name QIP_FILE CONST4.qip
+set_global_assignment -name QIP_FILE CONST24.qip
+set_global_assignment -name QIP_FILE BUS_CONTROLLER.qip
+set_global_assignment -name QIP_FILE ALU_SHIFTER.qip
+set_global_assignment -name BDF_FILE reg8bit.bdf
+set_global_assignment -name BDF_FILE reg32bit_upper8_unsigned.bdf
+set_global_assignment -name BDF_FILE reg32bit_upper8_signed.bdf
+set_global_assignment -name BDF_FILE reg32bit_universal.bdf
+set_global_assignment -name BDF_FILE reg32bit.bdf
+set_global_assignment -name BDF_FILE DP.bdf
+set_global_assignment -name VERILOG_FILE memory.v
+set_global_assignment -name VERILOG_FILE ALU.v
+set_global_assignment -name QIP_FILE MPC.qip
+set_global_assignment -name QIP_FILE LOADS.qip
+set_global_assignment -name QIP_FILE NEXT_ADDR.qip
+set_global_assignment -name BDF_FILE CU.bdf
+set_global_assignment -name BDF_FILE CPU.bdf
+set_global_assignment -name VECTOR_WAVEFORM_FILE FETCH.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE fet.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE BIPUSH.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE IADD.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE DUP.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE SWAP.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE ILOAD.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE ISTORE.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE GOTO.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE IINC.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE LDC_W.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE IFEQ.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE MOTHER_OF_ALL_INSTRUCTIONS.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform1.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform2.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform3.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform4.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform5.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform6.vwf
+set_global_assignment -name VERILOG_FILE Device.v
+set_global_assignment -name BDF_FILE wholeComputer.bdf
+set_global_assignment -name BDF_FILE mux4x.bdf
+set_global_assignment -name BDF_FILE mux3x.bdf
+set_global_assignment -name BDF_FILE mux8x.bdf
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
+set_global_assignment -name VECTOR_WAVEFORM_FILE FPU.vwf

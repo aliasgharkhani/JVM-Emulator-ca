@@ -1,0 +1,19 @@
+module Device(trapType, priority, hasInterrupt, PO,
+					PI, interrupt, clk, reset);
+	parameter TRAP_TYPE = 8'b0;
+	parameter PRIORITY = 4'b0;
+	
+	output reg [7:0] trapType;
+	output reg [3:0] interruptLevel;
+	output reg hasInterrupt;
+	output reg PO;
+	
+	input wire PI, interrupt;
+	input wire clk;
+	
+	always @(posedge clk)
+	begin
+	
+	end
+	
+	
